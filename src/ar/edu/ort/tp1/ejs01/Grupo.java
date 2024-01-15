@@ -15,4 +15,9 @@ public class Grupo {
 		setNombre(nombre);
 		integrantes = new ArrayList<>();
 	}
+	
+	// b- getNombre()
+	public String getNombre() {
+		return nombre;
+	}
 }
