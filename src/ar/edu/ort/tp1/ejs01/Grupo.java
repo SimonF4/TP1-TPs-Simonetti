@@ -20,4 +20,11 @@ public class Grupo {
 	public String getNombre() {
 		return nombre;
 	}
+	
+	// c- setNombre(String nombre)
+	public void setNombre(String nombre) {
+		if (nombre != null || nombre.isBlank()) {
+			this.nombre = nombre;
+		}
+	}
 }
