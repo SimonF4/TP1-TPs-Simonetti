@@ -27,4 +27,15 @@ public class Grupo {
 			this.nombre = nombre;
 		}
 	}
+	
+	// d- getCantidadIntegrantes()
+	/**
+	 * Devuelve la cantidad actual de integrantes del grupo. (en int => no tengo q
+	 * pasar la copia de la lista sino contar cuantos elementos tiene)
+	 * 
+	 * @return int = cantidad total de integrantes.
+	 */
+	public int getCantidadIntegrantes() {
+		return this.integrantes.size();
+	}
 }
