@@ -38,4 +38,28 @@ public class Grupo {
 	public int getCantidadIntegrantes() {
 		return this.integrantes.size();
 	}
+	
+	// e- agregarIntegrante(String nombreIntegrante)
+	/**
+	 * Agrega al grupo el nombre de un nuevo integrante, siempre y cuando éste no
+	 * haya sido cargado con anterioridad. Cuando ya exista, no debe volver a
+	 * agregarlo.
+	 * 
+	 * @param nombreIntegrante
+	 */
+	public void agregarIntegrante(String nombreIntegrante) {
+		String resultado = "No se pudo agregar al integrante";
+
+		if (buscarIntegrante(nombreIntegrante) == null) {
+			this.integrantes.add(nombreIntegrante);
+			resultado = nombreIntegrante + " fue asignado al grupo " + this.nombre;
+		}
+		/*
+		 * Cada vez que agregues un integrante el programa debe // mostrar el mensaje
+		 * “[nombreIntegrante] fue asignado al grupo [nombreGrupo]”, // donde
+		 * [nombreIntegrante] y [nombreGrupo] son, respectivamente, los nombres // del
+		 * nuevo integrante y del grupo.
+		 */
+		System.out.println(resultado);
+	}
 }
