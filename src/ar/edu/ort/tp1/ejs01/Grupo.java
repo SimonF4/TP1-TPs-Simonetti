@@ -62,4 +62,13 @@ public class Grupo {
 		 */
 		System.out.println(resultado);
 	}
+	
+	/*
+	 * *****************************************************************************
+	 * Del F al H son metodos similares. Hago 1ro el h xq lo uso en el metodo e.
+	 * MAL! Hago 1ro el F y despues el H.
+	 * *****************************************************************************
+	 */
+	
+	
 }
