@@ -70,5 +70,48 @@ public class Grupo {
 	 * *****************************************************************************
 	 */
 	
-	
+	// f- obtenerPosicionIntegrante(String nombreIntegrante)
+		/**
+		 * Devuelve la posición en el grupo del integrante cuyo nombre se ha recibido
+		 * por parámetro. En caso de no encontrarlo devolverá -1.
+		 * 
+		 * @param nombreIntegrante
+		 * @return int = posicion donde se encontro el integrante.
+		 *         <p>
+		 *         -1 = integrante no encontrado.
+		 *         </p>
+		 */
+		private int obtenerPosicionIntegrante(String nombreIntegrante) {
+			// como saco la posicion si ya busque el integrante? Tenes q si o si hacer otra
+			// busqueda al pedo. => hago al reves
+			// desarrollo en este metodo y despues en el buscar uso este
+			int posicionIntegranteEncontrado = NO_ENCONTRADO;
+			int i = 0;
+			int cantIntegrantes = this.integrantes.size(); // o puedo usar el getCantidadIntegrantes();
+
+			// CORRECCIONES > este if no lo tenia
+			if (nombreIntegrante != null && cantIntegrantes > 0) {
+				// Q lo q itero no llegue al limite de la lista a recorrer + q no lo halla
+				// encontrado.
+				while (i < cantIntegrantes && posicionIntegranteEncontrado == NO_ENCONTRADO) {
+					// este es el integrante actual. -> this.integrantes.get(i)
+					// en forma completa sin usar metodos locales seria BASICAMENTE asi ->
+					// (this.integrantes.get(i).equalsIgnoreCase(nombre))
+
+					// MAL! -> if (obtenerIntegrante(i).equalsIgnoreCase(nombre)) {
+					// MAL2! -> decia solo nombre en el parentesis y no nombreIntegrante.
+					if (this.integrantes.get(i).equalsIgnoreCase(nombreIntegrante)) {
+						posicionIntegranteEncontrado = i; // el integrante en la lista es solo un int q se guarda, no un
+															// objeto Integrante.
+					}
+
+					i++; // Lo ideal siempre es dejar el i++ para el final a menos q lo uses fuera de
+							// este while.
+				}
+			}
+
+			return posicionIntegranteEncontrado;
+		}
+		
+		
 }
