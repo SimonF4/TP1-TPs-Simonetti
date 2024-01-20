@@ -113,5 +113,10 @@ public class Grupo {
 			return posicionIntegranteEncontrado;
 		}
 		
+		//La otra forma mas corta de hacer este mismo metodo.
+		private int obtenerPosicionIntegranteVersion2(String nombreIntegrante) {
+			return this.integrantes.indexOf(nombreIntegrante);
+		}
+		
 		
 }
