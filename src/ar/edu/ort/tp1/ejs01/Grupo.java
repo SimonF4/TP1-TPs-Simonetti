@@ -135,4 +135,39 @@ public class Grupo {
 		// Como se si el integrante no existe? YO entiendo q es si se pasa del size.
 		return (posicion > this.integrantes.size()) ? this.integrantes.get(posicion) : null;
 	}
+	
+	// h- buscarIntegrante(String nombre)
+	/**
+	 * Busca al integrante del grupo cuyo nombre coincida con el parámetro de
+	 * entrada. En caso de que haya coincidencia, lo devuelve; caso contrario, el
+	 * método devolverá null.
+	 * 
+	 * @param nombre
+	 * @return String = encontro al integrante q buscabas y te devuelve el nombre
+	 *         del mismo.
+	 *         <p>
+	 *         null = no se encontro a este integrante en la lista.
+	 *         </p>
+	 */
+	public String buscarIntegrante(String nombre) {
+		// ESTA MAL!!! String integranteActual =
+		// obtenerIntegrante(obtenerPosicionIntegrante(nombre)); //Desde adentro hacia
+		// afuera-> saco el numerito de posicion de este chabon-> me pido ese chabon.
+		return (obtenerPosicionIntegrante(nombre) != NO_ENCONTRADO) ? nombre : null;
+	}
+
+	/*
+	 * Es ahora "public String obtenerIntegrante(int posicion) {" justo se me habia
+	 * ocurrido CREAR este metodo para el metodo de arriba y ya el ejs te ponia un
+	 * metodo igual a este(obtenerIntegrante).
+	 * 
+	 * private String dameIntegrante(int i) { return this.integrantes.get(i); }
+	 */
+
+	/*
+	 * *****************************************************************************
+	 * [FIN]Del F al H son metodos similares. Hago 1ro el h xq lo uso en el metodo
+	 * e. MAL! Hago 1ro el F y despues el H.
+	 * *****************************************************************************
+	 */
 }
