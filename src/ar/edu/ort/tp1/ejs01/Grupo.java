@@ -170,4 +170,34 @@ public class Grupo {
 	 * e. MAL! Hago 1ro el F y despues el H.
 	 * *****************************************************************************
 	 */
+	
+	// i- removerIntegrante
+	/**
+	 * 
+	 * Remueve de la colección de integrantes a aquel cuyo nombre coincide con el
+	 * nombre recibido como parámetro. Si lo encontró, luego de removerlo debe
+	 * devolverlo con return, y si no debe devolver null.
+	 * 
+	 * @param nombreIntegrante
+	 * @return String = integrante removido de la lista.
+	 *         <p>
+	 *         null = integrante no encontrado.
+	 *         </p>
+	 */
+	public String removerIntegrante(String nombreIntegrante) {
+		/*
+		 * [no puedo hacerlo en una linea pq puede q tenga posicion -1 => error] lo
+		 * busco (necesito la posicion) + remuevo(tmb este metodo me devuelve el
+		 * integranteRemovido asi q no necesito variable aux) return
+		 * this.integrantes.remove(obtenerPosicionIntegrante(nombreIntegrante));
+		 */
+		String integranteRemovido = null;
+		int posIntegrante = obtenerPosicionIntegrante(nombreIntegrante);
+
+		if (posIntegrante != NO_ENCONTRADO) {
+			integranteRemovido = this.integrantes.remove(posIntegrante);
+		}
+
+		return integranteRemovido;
+	}
 }
