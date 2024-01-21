@@ -118,5 +118,21 @@ public class Grupo {
 			return this.integrantes.indexOf(nombreIntegrante);
 		}
 		
-		
+	// g- obtenerIntegrante(int posicion)
+	/**
+	 * Recibe un valor entero que representa la posición del integrante en la lista
+	 * (entero igual o mayor que 1) y devuelve el integrante guardado en (posicion -
+	 * 1) dentro de la colección de integrantes. Si el integrante no existe se debe
+	 * devolver null.
+	 * 
+	 * @param posicion
+	 * @return String = el integrante q esta en esa posicion
+	 *         <p>
+	 *         null = no lo encontro
+	 *         </p>
+	 */
+	public String obtenerIntegrante(int posicion) {
+		// Como se si el integrante no existe? YO entiendo q es si se pasa del size.
+		return (posicion > this.integrantes.size()) ? this.integrantes.get(posicion) : null;
+	}
 }
