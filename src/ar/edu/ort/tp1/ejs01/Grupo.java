@@ -200,4 +200,26 @@ public class Grupo {
 
 		return integranteRemovido;
 	}
+	
+	// j- mostrarIntegrantes
+	/**
+	 * Muestra por consola la cantidad de integrantes y los nombres de cada uno de
+	 * ellos.
+	 */
+	private void mostrarIntegrantes() {
+		System.out.println("*".repeat(4));
+		System.out.println("Mostrar Integrantes...");
+
+		System.out.printf("Cantidad de integrantes: %d \n", getCantidadIntegrantes());
+		mostrarNombresIntegrantes();
+
+		System.out.println("*".repeat(4));
+	}
+
+	private void mostrarNombresIntegrantes() {
+		System.out.println("Nombre de los integrantes: ");
+		for (String integrante : integrantes) {
+			System.out.printf("- %s \n", integrante);
+		}
+	}
 }
