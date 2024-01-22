@@ -31,6 +31,12 @@ public class Main {
 		
 		System.out.println("-".repeat(40));
 		
+		// 4- Mostrá todos los datos del grupo
+		// NO SE PUEDE CON TO STRING PQ NECESITO RECORRER EL ARRAYLIST
+		miGrupo.mostrar();
+		
+		System.out.println("-".repeat(40));
+		
 		
 	}
 	
