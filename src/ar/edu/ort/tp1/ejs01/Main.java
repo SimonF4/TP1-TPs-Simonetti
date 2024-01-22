@@ -54,7 +54,9 @@ public class Main {
 
 		System.out.println("-".repeat(40));
 		
-		
+		// 8- Vaciá el grupo y volvé a mostrarlo.
+		miGrupo.vaciar();
+		miGrupo.mostrar();
 	}
 	
 	/**
