@@ -237,6 +237,14 @@ public class Grupo {
 		
 		System.out.println("*".repeat(40));
 	}
+
+	// l- vaciar
+	/**
+	 * public void vaciar() Elimina todos los elementos de la lista de integrantes.
+	 */
+	public void vaciar() {
+		this.integrantes.clear();
+	}
 	
 	
 }
