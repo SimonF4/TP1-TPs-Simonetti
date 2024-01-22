@@ -49,6 +49,10 @@ public class Main {
 
 		System.out.println("-".repeat(40));
 		
+		// 7- Mostrá de nuevo los datos del grupo, actualizados.
+		miGrupo.mostrar();
+
+		System.out.println("-".repeat(40));
 		
 		
 	}
