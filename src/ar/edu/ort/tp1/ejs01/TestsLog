@@ -1,0 +1,51 @@
+integrante1 fue asignado al grupo Mi Grupo
+integrante2 fue asignado al grupo Mi Grupo
+integrante3 fue asignado al grupo Mi Grupo
+integrante4 fue asignado al grupo Mi Grupo
+integranteFicticio fue asignado al grupo Mi Grupo
+----------------------------------------
+true
+false
+----------------------------------------
+Mostrar...
+****************************************
+Nombre del Grupo: Mi Grupo 
+****
+Mostrar Integrantes...
+Cantidad de integrantes: 5 
+Nombre de los integrantes: 
+- integrante1 
+- integrante2 
+- integrante3 
+- integrante4 
+- integranteFicticio 
+****
+****************************************
+----------------------------------------
+> Integrante removido: integranteFicticio
+----------------------------------------
+> Integrante removido: null
+----------------------------------------
+Mostrar...
+****************************************
+Nombre del Grupo: Mi Grupo 
+****
+Mostrar Integrantes...
+Cantidad de integrantes: 4 
+Nombre de los integrantes: 
+- integrante1 
+- integrante2 
+- integrante3 
+- integrante4 
+****
+****************************************
+----------------------------------------
+Mostrar...
+****************************************
+Nombre del Grupo: Mi Grupo 
+****
+Mostrar Integrantes...
+Cantidad de integrantes: 0 
+Nombre de los integrantes: 
+****
+****************************************
