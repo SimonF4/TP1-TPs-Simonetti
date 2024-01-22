@@ -37,6 +37,13 @@ public class Main {
 		
 		System.out.println("-".repeat(40));
 		
+		// 5- Remové al integrante ficticio para que el grupo quede con los integrantes
+		// reales. Luego de removerlo de la lista, mostrá los datos del integrante
+		// removido.
+		System.out.println("> Integrante removido: " + miGrupo.removerIntegrante("integranteFicticio"));
+		
+		System.out.println("-".repeat(40));
+		
 		
 	}
 	
