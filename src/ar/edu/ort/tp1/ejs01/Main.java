@@ -29,6 +29,9 @@ public class Main {
 		System.out.println(fueAgregado(miGrupo, "inTegrante4"));
 		System.out.println(fueAgregado(miGrupo, "integrante5"));
 		
+		System.out.println("-".repeat(40));
+		
+		
 	}
 	
 	/**
