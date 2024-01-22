@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Grupo {
 	// la cual representa al grupo de Trabajos Prácticos y sus integrantes
+	
+	private static int NO_ENCONTRADO = -1;
 	private String nombre; // para guardar el nombre del grupo
 	private ArrayList<String> integrantes; // otro atributo llamado integrantes (colección de Strings) donde cada
 											// elemento será el nombre de un integrante de tu grupo de trabajos
