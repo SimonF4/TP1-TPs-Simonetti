@@ -44,6 +44,12 @@ public class Main {
 		
 		System.out.println("-".repeat(40));
 		
+		// 6- Volvé a remover el mismo integrante ficticio.
+		System.out.println("> Integrante removido: " + miGrupo.removerIntegrante("integranteFicticio"));
+
+		System.out.println("-".repeat(40));
+		
+		
 		
 	}
 	
