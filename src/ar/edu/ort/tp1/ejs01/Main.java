@@ -23,7 +23,22 @@ public class Main {
 		
 		System.out.println("-".repeat(40));
 		
+		// 3- Escribí un método del programa principal que compruebe si un integrante
+		// determinado fue o no agregado al grupo. Probalo tanto con uno que exista como
+		// con uno que no.
+		System.out.println(fueAgregado(miGrupo, "inTegrante4"));
+		System.out.println(fueAgregado(miGrupo, "integrante5"));
 		
 	}
-
+	
+	/**
+	 * (2.) compruebe si un integrante determinado fue o no agregado al grupo.
+	 * 
+	 * @param nombreIntegrante
+	 * @return boolean(true=agregado, false=no agregado)
+	 */
+	private static boolean fueAgregado(Grupo grupo, String nombreIntegrante) {
+		// lo busco en este grupo y si NO devuelve null => lo agregue(true)
+		return (grupo.buscarIntegrante(nombreIntegrante) != null);
+	}
 }
