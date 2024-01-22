@@ -222,4 +222,21 @@ public class Grupo {
 			System.out.printf("- %s \n", integrante);
 		}
 	}
+	
+	// k- mostrar
+	/**
+	 * Muestra por consola el nombre del grupo, la cantidad de integrantes y el
+	 * nombre de cada uno de ellos.
+	 */
+	public void mostrar() {
+		System.out.println("Mostrar...");
+		System.out.println("*".repeat(40));
+		
+		System.out.printf("Nombre del Grupo: %s \n", this.nombre);
+		mostrarIntegrantes();
+		
+		System.out.println("*".repeat(40));
+	}
+	
+	
 }
