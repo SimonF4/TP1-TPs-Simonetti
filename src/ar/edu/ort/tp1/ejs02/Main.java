@@ -12,5 +12,11 @@ public class Main {
 		 * fueron los mismos). "
 		 */
 		
+		//Instanciaciones y completado de las variables a testear:
+		JuegoOlimpico juegoOlimpicoDeLaJuventud = new JuegoOlimpico();
+		completarJuegoOlimpico(juegoOlimpicoDeLaJuventud);
+		
+		//Testeo del calcularGanador():
+		juegoOlimpicoDeLaJuventud.calcularGanador();
 	}
 }
