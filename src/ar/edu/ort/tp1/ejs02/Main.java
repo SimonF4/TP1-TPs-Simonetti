@@ -19,4 +19,15 @@ public class Main {
 		//Testeo del calcularGanador():
 		juegoOlimpicoDeLaJuventud.calcularGanador();
 	}
+	
+	private static void completarJuegoOlimpico(JuegoOlimpico juegoOlimpico) {
+		Carrera cienMetrosLlanos = new Carrera("100m. llanos");
+		/* Por ahora no es necesario guardarse los atletas en variables.
+		Atleta atleta1 = new Atleta(8.00f, "100m. llanos");
+		Atleta atleta2 = new Atleta(8.15f, "100m. llanos");
+		Atleta atleta3 = new Atleta(8.15f, "100m. llanos");
+		Atleta atleta4 = new Atleta(8.55f, "100m. llanos");
+		*/
+		agregarAtletas(cienMetrosLlanos);
+	}
 }
