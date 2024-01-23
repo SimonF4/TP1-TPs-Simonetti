@@ -30,4 +30,11 @@ public class Main {
 		*/
 		agregarAtletas(cienMetrosLlanos);
 	}
+
+	private static void agregarAtletas(Carrera cienMetrosLlanos) {
+		cienMetrosLlanos.add(new Atleta(8.00f, "100m. llanos"));	
+		cienMetrosLlanos.add(new Atleta(8.15f, "100m. llanos"));		
+		cienMetrosLlanos.add(new Atleta(8.15f, "100m. llanos"));		
+		cienMetrosLlanos.add(new Atleta(8.55f, "100m. llanos"));	
+	}
 }
