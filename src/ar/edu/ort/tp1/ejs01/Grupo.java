@@ -1,6 +1,7 @@
 package ar.edu.ort.tp1.ejs01;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Grupo {
 	// la cual representa al grupo de Trabajos Prácticos y sus integrantes
@@ -120,6 +121,44 @@ public class Grupo {
 			return this.integrantes.indexOf(nombreIntegrante);
 		}
 		
+		/**
+		 * obtenerPosicionIntegrante() pero recorriendo la lista de integrantes usando
+		 * un Iterador. Al utilizar un Iterador, no importa de que tipo de dato sea la
+		 * lista (arraylist, hashmap, etc..) mientras la lista herede de Iterator se va
+		 * a poder recorrer. En obtenerPosicionIntegrante() se usaba el get(i) que es
+		 * mas de arraylist, por lo q si cambia el tipo de lista no funcionaria el
+		 * metodo ya que no existiria el metodo .get()
+		 * 
+		 * @param nombreIntegrante
+		 * @return int = posicion donde se encontro el integrante.
+		 *         <p>
+		 *         -1 = integrante no encontrado.
+		 *         </p>
+		 */
+		private int obtenerPosicionIntegranteVersion3(String nombreIntegrante) {
+			int posicionIntegranteEncontrado = NO_ENCONTRADO;
+			int i = 0;
+			Iterator<String> iterador = this.integrantes.iterator();
+			//int cantIntegrantes = this.integrantes.size();
+
+			//if (nombreIntegrante != null && cantIntegrantes > 0) {
+			if (nombreIntegrante != null && iterador.hasNext()) {
+				while (iterador.hasNext() && posicionIntegranteEncontrado == NO_ENCONTRADO) {
+					String integranteActual = iterador.next();
+					
+					//if (this.integrantes.get(i).equalsIgnoreCase(nombreIntegrante)) {
+					if (integranteActual.equalsIgnoreCase(nombreIntegrante)) {
+						posicionIntegranteEncontrado = i;
+						//Iterator no tiene la posicion, asi q si quiero la posicion tendria que usar ListIterator> .nextIndex()
+					}
+
+					i++;
+				}
+			}
+
+			return posicionIntegranteEncontrado;
+		}
+		
 	// g- obtenerIntegrante(int posicion)
 	/**
 	 * Recibe un valor entero que representa la posición del integrante en la lista
@@ -155,7 +194,7 @@ public class Grupo {
 		// ESTA MAL!!! String integranteActual =
 		// obtenerIntegrante(obtenerPosicionIntegrante(nombre)); //Desde adentro hacia
 		// afuera-> saco el numerito de posicion de este chabon-> me pido ese chabon.
-		return (obtenerPosicionIntegrante(nombre) != NO_ENCONTRADO) ? nombre : null;
+		return (obtenerPosicionIntegranteVersion3(nombre) != NO_ENCONTRADO) ? nombre : null;
 	}
 
 	/*
@@ -194,7 +233,7 @@ public class Grupo {
 		 * this.integrantes.remove(obtenerPosicionIntegrante(nombreIntegrante));
 		 */
 		String integranteRemovido = null;
-		int posIntegrante = obtenerPosicionIntegrante(nombreIntegrante);
+		int posIntegrante = obtenerPosicionIntegranteVersion3(nombreIntegrante);
 
 		if (posIntegrante != NO_ENCONTRADO) {
 			integranteRemovido = this.integrantes.remove(posIntegrante);
