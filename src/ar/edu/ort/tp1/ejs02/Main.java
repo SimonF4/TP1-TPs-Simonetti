@@ -17,7 +17,7 @@ public class Main {
 		completarJuegoOlimpico(juegoOlimpicoDeLaJuventud);
 		
 		//Testeo del calcularGanador():
-		juegoOlimpicoDeLaJuventud.calcularGanador();
+		juegoOlimpicoDeLaJuventud.mostrarGanador();
 	}
 	
 	private static void completarJuegoOlimpico(JuegoOlimpico juegoOlimpico) {
@@ -29,6 +29,7 @@ public class Main {
 		Atleta atleta4 = new Atleta(8.55f, "100m. llanos");
 		*/
 		agregarAtletas(cienMetrosLlanos);
+		juegoOlimpico.setCarrera(cienMetrosLlanos);
 	}
 
 	private static void agregarAtletas(Carrera cienMetrosLlanos) {
